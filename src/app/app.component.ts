@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.appServ.getTvShow()
     .subscribe(res => {
-      const test = res;
+      const test = JSON.stringify(res);
       console.log(test);
     }, err => console.log(err));
   }
